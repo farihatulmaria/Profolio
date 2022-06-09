@@ -394,7 +394,7 @@
                                 <div class="portfolio-tabs">
                                     <ul>
                                         <li class="filter" data-filter="all">ALL</li>
-                                        <li class="filter" data-filter=".design">DESIGN</li>
+                                        <li class="filter" data-filter=".design">WEB DESIGN</li>
                                         <li class="filter" data-filter=".development">DEVELOPMENT</li>
                                         <li class="filter" data-filter=".graphics">GRAPHICS</li>
                                         <li class="filter" data-filter=".templates">Templates</li>
@@ -408,7 +408,7 @@
                                             <div class="hovereffect">
                                                 <div class="portfolio-img">
                                                     <img src="assets/img/portfolio/11.jpeg" alt="graphics">
-                                                    <h3><span>3D Graphics</span><span>Templates</span></h3>
+                                                    <h3><span>Web Development</span><span>Templates</span></h3>
                                                 </div>
                                                 <div class="overlay">
                                                     <div class="overlay-info">
@@ -608,7 +608,105 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57973.68689576193!2d90.3613906786778!3d24.748999809653064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564f1007ad9b59%3A0x79a59cb060e32d6c!2sMymensingh!5e0!3m2!1sen!2sbd!4v1654783090796!5m2!1sen!2sbd" width="100%" height="500" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-md-6">
-                    <form>
+
+
+                    <iframe
+                    id="JotFormIFrame-221594351981461"
+                    title="Contact Form"
+                    onload="window.parent.scrollTo(0,0)"
+                    allowtransparency="true"
+                    allowfullscreen="true"
+                    allow="geolocation; microphone; camera"
+                    src="https://form.jotform.com/221594351981461"
+                    frameborder="0"
+                    style="
+                    min-width: 100%;
+                    height:539px;
+                    border:none;"
+                    scrolling="no"
+                  >
+                  </iframe>
+                  <script type="text/javascript">
+                    var ifr = document.getElementById("JotFormIFrame-221594351981461");
+                    if (ifr) {
+                      var src = ifr.src;
+                      var iframeParams = [];
+                      if (window.location.href && window.location.href.indexOf("?") > -1) {
+                        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+                      }
+                      if (src && src.indexOf("?") > -1) {
+                        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+                        src = src.substr(0, src.indexOf("?"))
+                      }
+                      iframeParams.push("isIframeEmbed=1");
+                      ifr.src = src + "?" + iframeParams.join('&');
+                    }
+                    window.handleIFrameMessage = function(e) {
+                      if (typeof e.data === 'object') { return; }
+                      var args = e.data.split(":");
+                      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+                      if (!iframe) { return; }
+                      switch (args[0]) {
+                        case "scrollIntoView":
+                          iframe.scrollIntoView();
+                          break;
+                        case "setHeight":
+                          iframe.style.height = args[1] + "px";
+                          break;
+                        case "collapseErrorPage":
+                          if (iframe.clientHeight > window.innerHeight) {
+                            iframe.style.height = window.innerHeight + "px";
+                          }
+                          break;
+                        case "reloadPage":
+                          window.location.reload();
+                          break;
+                        case "loadScript":
+                          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+                          var src = args[1];
+                          if (args.length > 3) {
+                              src = args[1] + ':' + args[2];
+                          }
+                          var script = document.createElement('script');
+                          script.src = src;
+                          script.type = 'text/javascript';
+                          document.body.appendChild(script);
+                          break;
+                        case "exitFullscreen":
+                          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+                          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+                          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+                          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+                          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+                          break;
+                      }
+                      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+                      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+                        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+                        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+                      }
+                    };
+                    window.isPermitted = function(originUrl, whitelisted_domains) {
+                      var url = document.createElement('a');
+                      url.href = originUrl;
+                      var hostname = url.hostname;
+                      var result = false;
+                      if( typeof hostname !== 'undefined' ) {
+                        whitelisted_domains.forEach(function(element) {
+                            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                                result = true;
+                            }
+                        });
+                        return result;
+                      }
+                    };
+                    if (window.addEventListener) {
+                      window.addEventListener("message", handleIFrameMessage, false);
+                    } else if (window.attachEvent) {
+                      window.attachEvent("onmessage", handleIFrameMessage);
+                    }
+                </script>
+                    <!-- <form>
                         <div class="form-group">
                             <input type="text" class="form-control" id="fname" placeholder="Full Name">
                         </div>
@@ -622,7 +720,7 @@
                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
                         </div>
                         <button type="submit" class="custom-btn ms-btn-1">Submit</button>
-                      </form>
+                    </form> -->
                 </div>
             </div>
             <div class="row p-t-80 ms-contact-detail m-tb-minus-12">
