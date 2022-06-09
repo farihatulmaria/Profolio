@@ -1,10 +1,6 @@
 body {
   background-color: #17181c !important;
 }
-body::-webkit-scrollbar-track {
-  background: #2c2f36 !important !important;
-}
-
 section {
   background: #202126 !important;
 }
