@@ -2167,6 +2167,8 @@ li.mixitup-control-active {
 
 .projects {
   color: #fff;
+  background: #2c2f36 !important;
+  padding: 10px 15px;
 }
 
 /** End Contact Section **/
