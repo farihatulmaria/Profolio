@@ -237,11 +237,11 @@ a {
 
 @-webkit-keyframes ms-flash {
   0% {
-    -webkit-transform: translateX(-100%) rotate(45deg);
+
     transform: translateX(-100%) rotate(45deg);
   }
   100% {
-    -webkit-transform: translateX(100%) rotate(45deg);
+
     transform: translateX(100%) rotate(45deg);
   }
 }
@@ -288,7 +288,6 @@ a {
   font-weight: 500;
   background: transparent;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
@@ -332,12 +331,10 @@ a {
   width: 30px;
   height: 100%;
   background-color: #fff;
-  -webkit-animation: shiny-btn1 3s ease-in-out infinite;
   animation: shiny-btn1 3s ease-in-out infinite;
 }
 
 .ms-box {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border: 1px solid transparent;
   padding: 30px;
@@ -346,31 +343,27 @@ a {
 }
 
 .ms-btn:active {
-  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
-    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
-    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
     -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
     inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-@-webkit-keyframes shiny-btn1 {
+@keyframes shiny-btn1 {
   0% {
-    -webkit-transform: scale(0) rotate(45deg);
+    transform: scale(0) rotate(45deg);
     opacity: 0;
   }
   80% {
-    -webkit-transform: scale(0) rotate(45deg);
+    transform: scale(0) rotate(45deg);
     opacity: 0.5;
   }
   81% {
-    -webkit-transform: scale(4) rotate(45deg);
+    transform: scale(4) rotate(45deg);
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(50) rotate(45deg);
+    transform: scale(50) rotate(45deg);
     opacity: 0;
   }
 }
@@ -392,11 +385,7 @@ a {
   width: 100%;
   height: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -406,11 +395,7 @@ a {
 
 .section-title {
   padding-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   z-index: 5;
 }
@@ -442,9 +427,6 @@ a {
 section {
   position: relative;
   background-color: #fff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -454,14 +436,11 @@ section {
 
 .hide-section {
   z-index: 7;
-  -webkit-transform: translate3d(0px, -100%, 0px);
   transform: translate3d(0px, -100%, 0px);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 #overlay_shine {
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: fixed;
   z-index: 1;
@@ -471,7 +450,6 @@ section {
   left: -50%;
   width: 200%;
   height: 100%;
-  -webkit-transform: rotate(-30deg) translateY(-150%);
   transform: rotate(-30deg) translateY(-150%);
 }
 
@@ -486,14 +464,8 @@ section {
   bottom: 0;
   background: #fff;
   z-index: 99;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 #ms-overlay .ms-roller {
@@ -503,9 +475,7 @@ section {
   height: 80px;
 }
 #ms-overlay .ms-roller div {
-  -webkit-animation: ms-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   animation: ms-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  -webkit-transform-origin: 40px 40px;
   transform-origin: 40px 40px;
 }
 #ms-overlay .ms-roller div:after {
@@ -519,7 +489,6 @@ section {
   margin: -4px 0 0 -4px;
 }
 #ms-overlay .ms-roller div:nth-child(1) {
-  -webkit-animation-delay: -0.036s;
   animation-delay: -0.036s;
 }
 #ms-overlay .ms-roller div:nth-child(1):after {
@@ -527,7 +496,6 @@ section {
   left: 63px;
 }
 #ms-overlay .ms-roller div:nth-child(2) {
-  -webkit-animation-delay: -0.072s;
   animation-delay: -0.072s;
 }
 #ms-overlay .ms-roller div:nth-child(2):after {
@@ -535,7 +503,6 @@ section {
   left: 56px;
 }
 #ms-overlay .ms-roller div:nth-child(3) {
-  -webkit-animation-delay: -0.108s;
   animation-delay: -0.108s;
 }
 #ms-overlay .ms-roller div:nth-child(3):after {
@@ -543,7 +510,6 @@ section {
   left: 48px;
 }
 #ms-overlay .ms-roller div:nth-child(4) {
-  -webkit-animation-delay: -0.144s;
   animation-delay: -0.144s;
 }
 #ms-overlay .ms-roller div:nth-child(4):after {
@@ -551,7 +517,6 @@ section {
   left: 40px;
 }
 #ms-overlay .ms-roller div:nth-child(5) {
-  -webkit-animation-delay: -0.18s;
   animation-delay: -0.18s;
 }
 #ms-overlay .ms-roller div:nth-child(5):after {
@@ -559,7 +524,6 @@ section {
   left: 32px;
 }
 #ms-overlay .ms-roller div:nth-child(6) {
-  -webkit-animation-delay: -0.216s;
   animation-delay: -0.216s;
 }
 #ms-overlay .ms-roller div:nth-child(6):after {
@@ -567,7 +531,6 @@ section {
   left: 24px;
 }
 #ms-overlay .ms-roller div:nth-child(7) {
-  -webkit-animation-delay: -0.252s;
   animation-delay: -0.252s;
 }
 #ms-overlay .ms-roller div:nth-child(7):after {
@@ -575,22 +538,11 @@ section {
   left: 17px;
 }
 #ms-overlay .ms-roller div:nth-child(8) {
-  -webkit-animation-delay: -0.288s;
   animation-delay: -0.288s;
 }
 #ms-overlay .ms-roller div:nth-child(8):after {
   top: 56px;
   left: 12px;
-}
-@-webkit-keyframes ms-roller {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
 }
 @keyframes ms-roller {
   0% {
@@ -650,41 +602,6 @@ section {
   z-index: 999;
 }
 
-@-webkit-keyframes morphing-image {
-  0% {
-    border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
-  }
-  10% {
-    border-radius: 39% 61% 38% 62%/53% 54% 46% 47%;
-  }
-  20% {
-    border-radius: 56% 44% 52% 48%/57% 35% 65% 43%;
-  }
-  30% {
-    border-radius: 41% 59% 45% 55%/43% 56% 44% 57%;
-  }
-  40% {
-    border-radius: 46% 54% 60% 40%/55% 65% 26% 45%;
-  }
-  50% {
-    border-radius: 44% 56% 42% 65%/41% 65% 46% 69%;
-  }
-  60% {
-    border-radius: 41% 69% 42% 68%/41% 71% 29% 69%;
-  }
-  70% {
-    border-radius: 44% 56% 60% 40%/63% 46% 64% 37%;
-  }
-  80% {
-    border-radius: 46% 54% 38% 62%/44% 48% 52% 56%;
-  }
-  90% {
-    border-radius: 66% 45% 57% 43%/49% 51% 49% 51%;
-  }
-  100% {
-    border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
-  }
-}
 
 @keyframes morphing-image {
   0% {
@@ -723,12 +640,10 @@ section {
 }
 /*===== Header css =====*/
 header {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: fixed;
   top: 50%;
   right: 0;
-  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   z-index: 16;
 }
@@ -738,8 +653,6 @@ header .ms-social {
   position: absolute;
   bottom: 0;
   display: none;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 header .ms-social li {
@@ -748,29 +661,16 @@ header .ms-social li {
 header .ms-social li a {
   width: 30px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: #17181c;
 }
 
 .sidebar-title {
   padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   border-bottom: 1px solid #17181c;
   display: none;
@@ -786,7 +686,6 @@ header .ms-social li a {
 }
 
 .ms-open {
-  -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -797,11 +696,7 @@ header .ms-social li a {
 .nav-toggle {
   width: 40px;
   height: 40px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background-color: #2c2f36 !important;
   color: #fff;
@@ -822,7 +717,6 @@ header .ms-social li a {
   padding: 0;
 }
 .ms-navigation ul li {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 0;
   list-style: none;
@@ -838,15 +732,12 @@ header .ms-social li a {
 .ms-navigation ul li a {
   width: 100%;
   padding: 14px 13px 13px 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #17181c;
   font-size: 15px;
   font-weight: 500;
 }
 .ms-navigation ul li a i {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 23px;
   font-size: 17px;
@@ -863,7 +754,6 @@ header .ms-social li a {
   opacity: 1;
 }
 .ms-navigation ul li .noty {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   pointer-events: none;
   width: 120px;
@@ -873,7 +763,6 @@ header .ms-social li a {
   top: 50%;
   left: -150px;
   text-align: right;
-  -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
 .ms-navigation ul li .noty span {
@@ -893,7 +782,6 @@ header .ms-social li a {
   border-radius: 2px;
   top: 50%;
   right: -2%;
-  -webkit-transform: translate(-50%, 50%) rotate(45deg);
   transform: translate(0%, -50%) rotate(45deg);
   bottom: 1px;
 }
@@ -905,7 +793,6 @@ header .ms-social li a {
   top: 150px;
   width: 158px;
   z-index: 16;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   /**  Backgrounds  **/
   /**  Light Dark modes  **/
@@ -1580,14 +1467,12 @@ header .ms-social li a {
 /* End Service Section */
 .ms-about-section-2 {
   display: block;
-  -webkit-transform: none;
   transform: none;
 }
 
 /*===== Resume css (EXPERIENCE & EDUCATION)=====*/
 .ms-experience-section {
   display: none;
-  -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }
 
@@ -1639,7 +1524,6 @@ header .ms-social li a {
   position: absolute;
   top: 4px;
   left: 0;
-  -webkit-transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
   transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 .timeline-marker:after {
@@ -1707,13 +1591,11 @@ header .ms-social li a {
   text-align: center;
 }
 .achive .count_block:hover .counter-icon {
-  -webkit-transform: rotate(5deg);
   transform: rotate(5deg);
 }
 .achive .count_block .counter-icon {
   width: 64px;
   height: 64px;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: absolute;
   top: 0;
@@ -1748,7 +1630,6 @@ header .ms-social li a {
 /** Start Portfolio Section **/
 .ms-portfolio-section {
   display: none;
-  -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }
 
@@ -1769,7 +1650,6 @@ header .ms-social li a {
   padding: 0 10px;
   font-weight: 600;
   margin: 0px 10px;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   text-transform: uppercase;
   color: #17181c;
@@ -1794,7 +1674,6 @@ li.mixitup-control-active {
 }
 
 .hovereffect {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 100%;
   margin-bottom: 24px;
@@ -1803,7 +1682,6 @@ li.mixitup-control-active {
   position: relative;
   text-align: center;
   cursor: default;
-  border: 1px solid #17181c;
   border: 1px solid #17181c;
   border-radius: 0px;
   background: #fff;
@@ -1819,22 +1697,15 @@ li.mixitup-control-active {
   position: relative;
 }
 .hovereffect .portfolio-img img {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .hovereffect .portfolio-img h3 {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin: 0;
   position: absolute;
   top: 15px;
   right: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
 }
 .hovereffect .portfolio-img h3 span {
@@ -1848,16 +1719,9 @@ li.mixitup-control-active {
   text-align: center;
 }
 .hovereffect .overlay {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -1872,7 +1736,6 @@ li.mixitup-control-active {
   display: flex;
 }
 .hovereffect:hover .portfolio-img img {
-  -webkit-transform: rotate(-5deg) scale(1.2);
   transform: rotate(-5deg) scale(1.2);
 }
 .hovereffect:hover .portfolio-img h3 {
@@ -1880,27 +1743,19 @@ li.mixitup-control-active {
 }
 .hovereffect:hover .overlay {
   background: rgba(0, 0, 0, 0.6);
-  -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
 .hovereffect:hover a.info {
   opacity: 1;
   filter: alpha(opacity=100);
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 .hovereffect a.info {
   width: 40px;
   height: 40px;
   margin: 0 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   text-decoration: none;
   border: 1px solid #fff;
@@ -1935,11 +1790,9 @@ li.mixitup-control-active {
 /** event Section **/
 .ms-news-section {
   display: none;
-  -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }
 .ms-news-section .news-info {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 100%;
   margin-bottom: 24px;
@@ -1949,7 +1802,6 @@ li.mixitup-control-active {
   border: 1px solid #17181c;
 }
 .ms-news-section .news-info:hover .news-img img {
-  -webkit-transform: rotate(-5deg) scale(1.2);
   transform: rotate(-5deg) scale(1.2);
 }
 .ms-news-section .news-info .news-img {
@@ -1961,7 +1813,6 @@ li.mixitup-control-active {
   overflow: hidden;
 }
 .ms-news-section .news-info .news-img img {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 0px;
   width: 100%;
@@ -1979,7 +1830,6 @@ li.mixitup-control-active {
   border-radius: 5px;
 }
 .ms-news-section .news-info .detail label a {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #999;
 }
@@ -2007,7 +1857,6 @@ li.mixitup-control-active {
   font-weight: 400;
 }
 .ms-news-section .news-info .detail .more-info a {
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   padding: 5px 10px;
   background: #17181c;
@@ -2024,17 +1873,11 @@ li.mixitup-control-active {
 }
 .ms-news-section .ms-pagination {
   height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 .ms-news-section .ms-pagination ul {
   margin-top: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .ms-news-section .ms-pagination ul .dots {
@@ -2062,7 +1905,6 @@ li.mixitup-control-active {
 /** Start Contact Section **/
 .ms-contact-section {
   display: none;
-  -webkit-transform: translateY(100%);
   transform: translateY(100%);
 }
 .ms-contact-section iframe {
@@ -2085,7 +1927,6 @@ li.mixitup-control-active {
 .ms-contact-section form .form-group input:focus,
 .ms-contact-section form .form-group textarea:focus {
   outline: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .ms-contact-section form .form-group input::-webkit-input-placeholder,
@@ -2115,18 +1956,9 @@ li.mixitup-control-active {
   position: relative;
 }
 .ms-contact-section .ms-contact-detail .ms-box .detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: center;
 }
@@ -2145,18 +1977,9 @@ li.mixitup-control-active {
   height: 70px;
   margin-bottom: 15px;
   background-color: #202126 !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
 }
