@@ -5,8 +5,177 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doctor Portal</title>
+
+    <!-- css All Plugins Files -->
+    <link rel="stylesheet" href="../../css/plugins/animate.css" />
+    <link rel="stylesheet" href="../../css/plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../css/plugins/bootstrap.css" />
+    <link rel="stylesheet" href="../../css/plugins/jquery.fancybox.min.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" id="main_style" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/responsive.css" />
+    <link rel="stylesheet" class="dark-mode" href="../../css/dark.css" />
   </head>
-  <body class="body-bg">
-    Doctor Portal
+  <body class="text-white py-5 body-bg">
+    <!-- On change section animation -->
+    <div id="overlay_shine"></div>
+
+    <!-- Header navigation section -->
+    <header>
+      <div class="sidebar-title">
+        <h5>Menu</h5>
+        <a href="javascript:void(0)" class="nav-close"
+          ><i class="fa fa-times" aria-hidden="true"></i
+        ></a>
+      </div>
+      <nav class="ms-navigation">
+        <div>
+          <ul>
+            <li>
+              <a
+                href="/index.html"
+                class="navs-link nav-home"
+                data-section="ms-home"
+                ><i class="fa fa-home"></i><span>Home</span></a
+              ><span class="noty"><span>Home</span></span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="ms-social">
+        <li>
+          <a
+            class="ms-btn-1"
+            href="https://www.facebook.com/farihatul.maria"
+            target="_blank"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a class="ms-btn-1" href="#" target="_blank"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a class="ms-btn-1" href="#" target="_blank"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="ms-btn-1"
+            href="https://www.linkedin.com/in/farihatul-maria/"
+            target="_blank"
+            ><i class="fa fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <div class="header-overlay"></div>
+    <a href="javascript:void(0)" class="nav-toggle"
+      ><i class="fa fa-bars" aria-hidden="true"></i
+    ></a>
+    <!-- End Header navigation section -->
+
+    <div class="container">
+      <div class="section-title p-b-30 pt-3">
+        <h1 class="text-center">Doctor Portal</h1>
+        <span class="ligh-title"> Doctor Portal</span>
+      </div>
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+        <div class="col">
+          <img
+            src="/assets/img/portfolio/doctor-portal.png"
+            alt="Doctor Portal"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="/assets/img/portfolio/doctor-portal-appoinment.jpg"
+            alt="Doctor Portal"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="/assets/img/portfolio/doctor-portal-contact.jpg"
+            alt="Doctor Portal"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col">
+          <div class="web-content">
+            <h3 class="title mb-3">
+              <span style="background-color: #435da5; padding: 5px"
+                ><b>React website</b></span
+              >
+            </h3>
+            <p>
+              It's an hospital website for Doctors.In this website the users can apply for and appointment just like their would have done in hospital.User's can even choose a day they want that appointment. Their can cancel an appointment from their dashbord. We have a admin route where the admin can add new doctors, see all of the user's activities and so on . This website also has an admin route where admins do their work and we add a blog page too for the company to add blogs.
+            </p>
+            <a
+              href="https://doctor-portal-4b738.firebaseapp.com"
+              target="_blank"
+              class=""
+            >
+              <button class="btn btn-purple">
+                <i class="fa-solid fa-link"></i>
+              </button>
+            </a>
+            <a
+              href="https://github.com/farihatulmaria/Doctor-Portal-Client"
+              target="_blank"
+              class="mx-2"
+            >
+              <button class="btn btn-purple">
+                <i class="fa-solid fa-code"></i>
+              </button>
+            </a>
+            <h5><b>What kind of technologies I used : </b></h5>
+            <p> 
+              <ol>
+                <li>on the client-side we used react js</li>
+                <li>on the server-side we used node js</li>
+                <li>We used Firebase authentication and deployment</li>
+                <li>It has a blogging system where admin user's can add a blog </li>
+                <li>For DataBase we used NoSQL ( MongoDB )</li>
+                <li>For payment we used Stripe</li>
+              </ol>
+            </p>
+            
+          </div>
+        </div>
+        <div class="col links-container">
+          <p><b><i class="fa-solid fa-link"></i> Live Demo :</b> <a href="https://doctor-portal-4b738.firebaseapp.com">https://doctor-portal-4b738.firebaseapp.com</a></p>
+
+          <p><b><i class="fa-solid fa-pen-nib"></i> Client-Side Code Link :</b> <a href="https://github.com/farihatulmaria/Doctor-Portal-Client">https://github.com/farihatulmaria/Doctor-Portal-Client</a></p>
+
+          <p><b><i class="fa-solid fa-server"></i> Server-Side Code Link :</b> <a href="https://github.com/farihatulmaria/Doctor-Portal-Server">https://github.com/farihatulmaria/Doctor-Portal-Server</a></p>
+
+          <p><b>Started :</b> Mar 15</p>
+          <p><b>Completed :</b> Jun 10</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plugins JS -->
+    <script src="../../js/plugins/jquery-3.5.1.min.js"></script>
+    <script src="../../js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="../../js/plugins/jquery.fancybox.min.js"></script>
+    <script src="../../js/plugins/mixitup.min.js"></script>
+    <script src="../../js/plugins/fontawesome.js"></script>
+    <script src="../../js/plugins/tilt.jquery.js"></script>
+    <!-- theme particles script -->
+    <script src="../../js/plugins/particles.min.js"></script>
+    <script src="../../js/plugins/app.js"></script>
+    <!-- Main Js -->
+
+    <script src="../../js/main.js"></script>
   </body>
 </html>
